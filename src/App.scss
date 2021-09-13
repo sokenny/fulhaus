@@ -30,10 +30,12 @@ body{
     background-color: $canvas;
 }
 
+
 .main-padding{
-    padding-left: $main-padding;
-    padding-right: $main-padding;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
 }
+
 
 .main-container{
     border: $main-border;
@@ -58,6 +60,11 @@ body{
 
   .main-container{
     margin:  0 15%;
+  }
+
+  .main-padding{
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
 }
