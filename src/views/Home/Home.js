@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import axios from 'axios';
 
@@ -7,18 +7,15 @@ import Banner from '../../components/Banner/Banner'
 import Products from '../../components/Products/Products'
 import Cart from '../../components/Cart/Cart'
 
-import { containsObject } from '../../globalAssets';
-
-
 const Home = () => {
 
-    const [showCart, setShowCart] = useState(false)
     const [products, setProducts] = useState([])
-
     const [cartProducts, setCartProducts] = useState([])
+    const [showCart, setShowCart] = useState(false)
 
     useEffect(()=>{
 
+        // If local storage has cart products stored, we initialize the state to that value
         let cart = JSON.parse(localStorage.getItem('cart'))
         if(cart.length>0){
             setCartProducts(cart)
@@ -36,6 +33,7 @@ const Home = () => {
         image: 'fulhaus-banner.jpg',
         title: "Patio Furniture",
         cta: {  text: "Shop", 
+                // Action triggered when cta button is clicked
                 action: ()=> {
                     document.querySelector('.products-container').scrollIntoView({ behavior: 'smooth' })
                     closeCart()
@@ -58,12 +56,10 @@ const Home = () => {
     }
 
     useEffect(()=>{
-    })
-
-    useEffect(()=>{
         localStorage.setItem('cart', JSON.stringify(cartProducts))
     }, [cartProducts])
 
+    // Handler to make sure the cart drawer slides before dismounting
     function closeCart(){
 
         showCart &&

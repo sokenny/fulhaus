@@ -7,15 +7,11 @@ import './Cart.scss'
 
 const Cart = ({cartProducts, removeFromCart, emptyAction}) => {
 
-    const [opacity, setOpacity] = useState(0)
     const [slide, setSlide] = useState(false)
     const [total, setTotal] = useState(null)
 
     useEffect(()=>{
         setSlide(true)
-        setTimeout(() => {
-            setOpacity(1)
-        }, 200);
     }, [])   
 
     useEffect(()=>{

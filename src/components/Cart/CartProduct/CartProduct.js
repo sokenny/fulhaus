@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import { MdClose } from 'react-icons/md'
 import { capitalizeSentence } from '../../../globalAssets';
@@ -6,7 +6,6 @@ import { capitalizeSentence } from '../../../globalAssets';
 import './CartProduct.scss'
 
 const CartProduct = ({product, removeFromCart}) => {
-
 
     return ( 
 

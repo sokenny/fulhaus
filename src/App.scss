@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@100;200;400;500&display=swap');
+@import "variables";
 
-$canvas: #f7efe7;
-$primary-color: #003941;
 
 *{
     box-sizing: border-box;
@@ -32,14 +31,14 @@ body{
 }
 
 .main-padding{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: $main-padding;
+    padding-right: $main-padding;
 }
 
 .main-container{
-    border: 1px solid black;
+    border: $main-border;
     margin:  0 3%;
-    padding-top: 8vh;
+    padding-top: $nav-height;
 }
 
 .main-btn{
@@ -59,11 +58,6 @@ body{
 
   .main-container{
     margin:  0 15%;
-  }
-
-  .main-padding{
-      padding-left: 15%!important;
-      padding-right: 15%!important;
   }
 
 }
