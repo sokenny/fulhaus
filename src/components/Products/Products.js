@@ -20,7 +20,7 @@ const Products = ({products, addToCart, cartProducts}) => {
                 {/* Looping rows */}
                 {rows.map((row, i)=>
 
-                    <div className="pc-row" key={i + new Date().getTime()}>
+                    <div className="pc-row" key={i}>
 
                     {/* Looping individual row (products) */}
                     {row.map((product)=>
