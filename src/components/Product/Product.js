@@ -1,12 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import ProductInfo from './ProductInfo/ProductInfo'
 
 import './Product.scss'
 
 const Product = ({product, addToCart, cartProducts}) => {
-
+    
     const [showInfo, setShowInfo] = useState(false)
+
+    useEffect(()=>{
+        console.log('seshin, ', showInfo)
+    })
 
     return(
             

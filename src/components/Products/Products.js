@@ -18,9 +18,9 @@ const Products = ({products, addToCart, cartProducts}) => {
             <main className="products-container">
                 
                 {/* Looping rows */}
-                {rows.map((row)=>
+                {rows.map((row, i)=>
 
-                    <div className="pc-row">
+                    <div className="pc-row" key={i + new Date().getTime()}>
 
                     {/* Looping individual row (products) */}
                     {row.map((product)=>
