@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@100;200;400;500&display=swap');
+
+$canvas: #f7efe7;
+$primary-color: #003941;
+
+*{
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary-color;
+  }
+
+body{
+    background-color: $canvas;
+}
+
+.main-padding{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.main-container{
+    border: 1px solid black;
+    margin:  0 3%;
+    padding-top: 8vh;
+}
+
+.main-btn{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Montserrat;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (min-width: 1700px) {
+
+  .main-container{
+    margin:  0 15%;
+  }
+
+  .main-padding{
+      padding-left: 15%!important;
+      padding-right: 15%!important;
+  }
+
+}

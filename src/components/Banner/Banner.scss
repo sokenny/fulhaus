@@ -1,0 +1,43 @@
+header{
+
+    height: 92vh;
+    
+    .header-image{
+        height: 67%;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .header-text{
+        height: 33%;
+        background-color: #003941;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+
+        h1{
+            margin: 0 0 10px 0;
+            font-family: Crimson Text;
+            color: white;
+            font-size: 4em;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header-text{
+        h1{
+            text-align: center;
+            line-height: 1em;
+            font-size: 3em!important;
+
+        }
+    }
+
+}
